@@ -1,0 +1,26 @@
+# link to pub chess.com api
+# https://www.chess.com/announcements/view/published-data-api#pubapi-general-rate-limits
+
+###
+#info on person
+api.chess.com/pub/player/BHAndersonJr
+
+
+###
+
+#info on current daily game 
+https://api.chess.com/pub/player/BHAndersonJr/games
+
+
+
+###
+#info on live and daily chess games a player has finished 
+
+# Description: Array of Live and Daily Chess games that a player has finished.
+# URL pattern: https://api.chess.com/pub/player/{username}/games/{YYYY}/{MM}
+//so this returns a JSON object that has a key "games" and the value there is an array of games. It's order chronologically with 06.01 games first and later games last. 
+//This call should get everything we need though. Since it has the game moveset *needs to be cleaned* opponent and time 
+//
+
+https://api.chess.com/pub/player/bhandersonjr/games/2023/06
+
