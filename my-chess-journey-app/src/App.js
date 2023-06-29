@@ -23,7 +23,6 @@ export default function App() {
             <Route path="/gameOfTheDay" element={<GameOfTheDay/>}/>
           </Routes>
         </main>
-
       </div>
     </Router>
   );
