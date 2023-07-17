@@ -57,10 +57,24 @@ function getReadableGameString(gameObject){
 
     }
 
-    gameTemplate.moves = moves;
+    gameTemplate.moves = moves.trim();
     gameTemplate.white = gameObject.white.username;
     gameTemplate.black = gameObject.black.username;
+    let result = moves.slice(-4, -1);
+    
+    switch(result){
+        case '0-1':
+            gameTemplate.winner = gameObject.black.username;
+            break;
+        case '1-0':
+            gameTemplate.winner = gameObject.white.username;
+            break;
+        default:
+            gameTemplate.winner = "Game Drawn";
+    }
     return gameTemplate;
+
+
 }
 
 
