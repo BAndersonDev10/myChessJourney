@@ -15,6 +15,7 @@ export default function NavBar(){
                 <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/'>Home</NavLink>
                 <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/latestGame'>Latest Game</NavLink>
                 <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/blog'>Blog</NavLink>
+                <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='login'>Login</NavLink>
             </div>
 
         </nav>

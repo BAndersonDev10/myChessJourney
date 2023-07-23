@@ -2,7 +2,7 @@ package learn.myChess.model;
 
 import java.util.Objects;
 
-public class chessGame {
+public class ChessGame {
 
     private int gameId;
     private String playerOneName;
@@ -12,9 +12,9 @@ public class chessGame {
     // 0 for placeholder. 1 for white wins 2 for black wins 3 for draw
     private int winner;
 
-    public chessGame(){};
+    public ChessGame(){};
 
-    public chessGame(int gameId, String playerOneName, String playerTwoName, String moves, int winner) {
+    public ChessGame(int gameId, String playerOneName, String playerTwoName, String moves, int winner) {
         this.gameId = gameId;
         this.playerOneName = playerOneName;
         this.playerTwoName = playerTwoName;
@@ -66,7 +66,7 @@ public class chessGame {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        chessGame chessGame = (chessGame) o;
+        ChessGame chessGame = (ChessGame) o;
         return gameId == chessGame.gameId && winner == chessGame.winner && Objects.equals(playerOneName, chessGame.playerOneName) && Objects.equals(playerTwoName, chessGame.playerTwoName) && Objects.equals(moves, chessGame.moves);
     }
 
