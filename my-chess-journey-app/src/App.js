@@ -1,5 +1,5 @@
 import Blog from "./components/Blog"
-import GameOfTheDay from "./components/GameOfTheDay"
+import LatestGame from "./components/LatestGame"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 
@@ -20,7 +20,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/blog" element={<Blog/>}/>
-            <Route path="/gameOfTheDay" element={<GameOfTheDay/>}/>
+            <Route path="/latestGame" element={<LatestGame/>}/>
           </Routes>
         </main>
       </div>

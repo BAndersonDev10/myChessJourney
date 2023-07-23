@@ -13,7 +13,7 @@ export default function NavBar(){
         <nav className='navbar navbar-expand-lg bd-body-tertiary border-bottom border-dark'>
             <div className='container rounded-header px-4'>
                 <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/'>Home</NavLink>
-                <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/gameOfTheDay'>Game Of The Day</NavLink>
+                <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/latestGame'>Latest Game</NavLink>
                 <NavLink className='navbar-brand navbar-link-active' aria-current='page' to='/blog'>Blog</NavLink>
             </div>
 
