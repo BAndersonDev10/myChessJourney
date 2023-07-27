@@ -2,6 +2,7 @@ import Blog from "./components/Blog"
 import LatestGame from "./components/LatestGame"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
+import Login from "./components/Login"
 
 
 
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/blog" element={<Blog/>}/>
             <Route path="/latestGame" element={<LatestGame/>}/>
+            <Route path="/login" element={<Login/>}/>
           </Routes>
         </main>
       </div>

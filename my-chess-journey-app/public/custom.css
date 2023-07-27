@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia,'Corben', Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: url(../src/images/bishop.png) repeat;
+     /* https://commons.wikimedia.org/wiki/File:Chess_tile_bl.svg */
+}
+
+
+.rounded-box {
+    background: white;
+    border-radius: 1em;
+    padding: 2em;
+    box-shadow: 0 0 1em #302f2f;
+}
+.rounded-header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: white;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    box-shadow: 0.2em 0.2em 1em #141414;
+}
+
+
+.img-gen {
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0.2em 0.2em 1em #333231;
+    object-position: center;
+    width: auto;
+}
+
+
+.inline-button {
+    display: inline-block;
+}
+
+
+.navbar-link-active {
+    transition: all 0.5s;
+}
+.navbar-link-active:hover {
+    text-shadow: 5px 5px 10px #4b4947;
+}
+
+.form-control, 
+.form-control:focus {
+    background-color: rgb(19, 19, 19);
+}
+.form-control:focus {
+    border-color: #1d1c1c;
+    box-shadow: 0 0 8px #333131;
+}
