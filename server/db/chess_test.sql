@@ -1,7 +1,6 @@
--- drop database if exists
-DROP DATABASE IF EXISTS mychessjourney;
-CREATE DATABASE mychessjourney;
-use mychessjourney;
+DROP DATABASE IF EXISTS mychessjourney_test;
+CREATE DATABASE mychessjourney_test;
+use mychessjourney_test;
 
 
 
@@ -12,7 +11,7 @@ DROP TABLE IF EXISTS game;
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS post;
 
--- now create the tables 
+-- now create the tables
 
 CREATE TABLE game(
     gameid INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -59,15 +58,3 @@ CREATE TABLE post(
 INSERT INTO role (`name`) VALUES
     ('USER'),
     ('ADMIN');
-
-
-
-
-
-
-
-
-
-
-
-

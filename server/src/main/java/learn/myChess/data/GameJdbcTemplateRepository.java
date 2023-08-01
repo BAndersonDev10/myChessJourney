@@ -1,6 +1,7 @@
 package learn.myChess.data;
 
 
+import learn.myChess.data.mappers.GameMapper;
 import learn.myChess.model.ChessGame;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -17,10 +18,10 @@ public class GameJdbcTemplateRepository {
     }
 
     public List<ChessGame> findByPlayer(String playerId){
-        //add sql string TODO
+        final String sql = "SELECT gameid, playerone, playertwo, moves, result "+
+                "FROM game WHERE playerone = ? OR playertwo = ?";
 
-        List<ChessGame> result = null;
-        //add list
+        List<ChessGame> result = jdbcTemplate.query(sql, new GameMapper(), playerId);
 
         return result;
     }
