@@ -22,7 +22,7 @@ export default function Home(){
 				<p className='fs-4 pt-4'>
                 My name is Brian Anderson and I have loved the game of chess since I was a little kid.
                 I've decided to begin a blog detailing my development and growth as a chess player and hobbyist developer. 
-                Please feel free to reach out with any questions to bhandersonjunior@gmail.com.
+                Please feel free to reach out with any questions to banderson@dev-10.com.
 				</p>
 
 			</div>
