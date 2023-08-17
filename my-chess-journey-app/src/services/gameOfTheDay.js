@@ -26,9 +26,12 @@ function getReadableGameString(gameObject){
 
     let gameTemplate = {};
     
-    //had to figure out how to get pgn into a readable format 
-
+    
     let moves = gameObject.pgn;
+    const indexOfDate = moves.indexOf('EndDate');
+    const gameDate = moves.slice(indexOfDate+9, indexOfDate+19);
+    
+    //had to figure out how to get pgn into a readable format 
     const indexOfFirstMove = moves.indexOf('1. ');
     moves = moves.slice(indexOfFirstMove);
     let done = false;
@@ -56,6 +59,8 @@ function getReadableGameString(gameObject){
         }
 
     }
+    gameTemplate.date = gameDate;
+    gameTemplate.url=gameObject.url;
 
     gameTemplate.moves = moves.trim();
     gameTemplate.white = gameObject.white.username;
@@ -72,6 +77,7 @@ function getReadableGameString(gameObject){
         default:
             gameTemplate.winner = "Game Drawn";
     }
+    // console.log(gameTemplate);
     return gameTemplate;
 
 

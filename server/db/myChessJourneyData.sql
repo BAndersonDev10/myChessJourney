@@ -19,7 +19,9 @@ CREATE TABLE game(
     playerone VARCHAR(255),
     playertwo VARCHAR(255),
     moves VARCHAR(510) NOT NULL,
-    winner INT NOT NULL
+    winner INT NOT NULL,
+    gamedate DATE NOT NULL,
+    gamelink VARCHAR(510) NOT NULL
 );
 
 CREATE TABLE appuser(

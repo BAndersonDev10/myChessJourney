@@ -1,6 +1,7 @@
 package learn.myChess.model;
 
 import java.util.Objects;
+import java.time.LocalDate;
 
 public class ChessGame {
 
@@ -11,15 +12,19 @@ public class ChessGame {
     private String moves;
     // 0 for placeholder. 1 for white wins 2 for black wins 3 for draw
     private int winner;
+    private String url;
+    private LocalDate gameDate;
 
     public ChessGame(){};
 
-    public ChessGame(int gameId, String playerOneName, String playerTwoName, String moves, int winner) {
+    public ChessGame(int gameId, String playerOneName, String playerTwoName, String moves, int winner, String url, LocalDate gameDate) {
         this.gameId = gameId;
         this.playerOneName = playerOneName;
         this.playerTwoName = playerTwoName;
         this.moves = moves;
         this.winner = winner;
+        this.url = url;
+        this.gameDate = gameDate;
     }
 
     public int getGameId() {
